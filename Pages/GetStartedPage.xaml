@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Azamind.Eats.Pages.GetStartedPage"
+             Title="GetStartedPage"
+             Shell.NavBarIsVisible="false">
+
+    <StackLayout
+        BackgroundColor="{ StaticResource Primary }">
+
+        <StackLayout Orientation="Horizontal">
+            <Frame
+                HeightRequest="80"
+                WidthRequest="80"
+                CornerRadius="90"
+                Padding="0"
+                Margin="40, 30, 10, 30">
+                <Image
+                    Source="logo.png"
+                    HeightRequest="50"
+                    WidthRequest="50"
+                />
+            </Frame>
+        </StackLayout>
+        <StackLayout HeightRequest="220">
+            <Label
+                Margin="30, 0"
+                FontSize="65"
+                Text="Food for Everyone"
+                TextColor="{ StaticResource White }"
+                LineBreakMode="WordWrap" 
+                LineHeight="0.7"
+                FontAttributes="Bold"
+                />
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HeightRequest="340">
+            <AbsoluteLayout>
+                <Image
+                    Source="man.png"
+                    HeightRequest="300"
+                    WidthRequest="200"
+                    Rotation="5"
+                    AbsoluteLayout.LayoutBounds="210, 110, 210, 110">
+                    <Image.Shadow>
+                        <Shadow Brush="{StaticResource Primary}" 
+                            Offset="50, 100"
+                            Radius="70"
+                            Opacity="0.9"/>
+                    </Image.Shadow>
+                </Image>
+            </AbsoluteLayout>
+            <AbsoluteLayout>
+                <Image
+                    Source="girl.png"
+                    HeightRequest="400"
+                    WidthRequest="400"
+                    Rotation="-3"
+                    AbsoluteLayout.LayoutBounds="-200, 100, -200, 100">
+                    <Image.Shadow>
+                        <Shadow Brush="{StaticResource Primary}" 
+                            Offset="200, 60"
+                            Radius="50"
+                            Opacity="0.5"/>
+                    </Image.Shadow>
+                </Image>
+            </AbsoluteLayout>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+            <Button
+                CornerRadius="40"
+                HeightRequest="60"
+                WidthRequest="320"
+                TextColor="{ StaticResource Primary}"
+                BackgroundColor="{ StaticResource White }"
+                Text="Get started"
+                Clicked="Button_Clicked"
+                />
+        </StackLayout>
+
+    </StackLayout>
+
+</ContentPage>
