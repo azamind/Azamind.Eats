@@ -8,17 +8,22 @@
     <StackLayout
         BackgroundColor="{ StaticResource Primary }">
 
-        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" HeightRequest="150">
             <Frame
-                HeightRequest="80"
-                WidthRequest="80"
-                CornerRadius="90"
-                Padding="0"
-                Margin="40, 30, 10, 30">
+                VerticalOptions="Center"
+                HorizontalOptions="Center"
+                HeightRequest="100"
+                WidthRequest="100"
+                CornerRadius="50"
+                IsClippedToBounds="True"
+                >
                 <Image
+                    HorizontalOptions="CenterAndExpand"
                     Source="logo.png"
                     HeightRequest="50"
                     WidthRequest="50"
+                    VerticalOptions="CenterAndExpand"
+                    Aspect="AspectFit"
                 />
             </Frame>
         </StackLayout>
@@ -29,7 +34,7 @@
                 Text="Food for Everyone"
                 TextColor="{ StaticResource White }"
                 LineBreakMode="WordWrap" 
-                LineHeight="0.7"
+                LineHeight="0.8"
                 FontAttributes="Bold"
                 />
         </StackLayout>
@@ -53,6 +58,7 @@
                     HeightRequest="250"
                     Source="man.png"
                     Rotation="5"
+                    AbsoluteLayout.LayoutBounds="10, 50, 150, 200"
                     >
                     <Image.Shadow>
                         <Shadow Brush="{StaticResource Primary}" 
@@ -65,7 +71,7 @@
         </StackLayout>
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
             <Button
-                CornerRadius="40"
+                CornerRadius="20"
                 HeightRequest="60"
                 WidthRequest="320"
                 TextColor="{ StaticResource Primary}"
