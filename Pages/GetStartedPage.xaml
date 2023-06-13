@@ -35,7 +35,7 @@
                 TextColor="{ StaticResource White }"
                 LineBreakMode="WordWrap" 
                 LineHeight="0.8"
-                FontAttributes="Bold"
+                FontFamily="OpenSansBold"
                 />
         </StackLayout>
         <StackLayout Orientation="Horizontal" HorizontalOptions="Center"  HeightRequest="300">
