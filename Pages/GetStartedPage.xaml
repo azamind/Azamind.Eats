@@ -8,7 +8,7 @@
     <StackLayout
         BackgroundColor="{ StaticResource Primary }">
 
-        <StackLayout Orientation="Horizontal">
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
             <Frame
                 HeightRequest="80"
                 WidthRequest="80"
@@ -22,7 +22,7 @@
                 />
             </Frame>
         </StackLayout>
-        <StackLayout HeightRequest="220">
+        <StackLayout HeightRequest="220" HorizontalOptions="Center">
             <Label
                 Margin="30, 0"
                 FontSize="65"
@@ -33,34 +33,32 @@
                 FontAttributes="Bold"
                 />
         </StackLayout>
-        <StackLayout Orientation="Horizontal" HeightRequest="340">
-            <AbsoluteLayout>
-                <Image
-                    Source="man.png"
-                    HeightRequest="300"
-                    WidthRequest="200"
-                    Rotation="5"
-                    AbsoluteLayout.LayoutBounds="210, 110, 210, 110">
-                    <Image.Shadow>
-                        <Shadow Brush="{StaticResource Primary}" 
-                            Offset="50, 100"
-                            Radius="70"
-                            Opacity="0.9"/>
-                    </Image.Shadow>
-                </Image>
-            </AbsoluteLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center"  HeightRequest="300">
             <AbsoluteLayout>
                 <Image
                     Source="girl.png"
-                    HeightRequest="400"
-                    WidthRequest="400"
                     Rotation="-3"
-                    AbsoluteLayout.LayoutBounds="-200, 100, -200, 100">
+                    HeightRequest="250"
+                    >
                     <Image.Shadow>
                         <Shadow Brush="{StaticResource Primary}" 
                             Offset="200, 60"
                             Radius="50"
                             Opacity="0.5"/>
+                    </Image.Shadow>
+                </Image>
+            </AbsoluteLayout>
+            <AbsoluteLayout>
+                <Image
+                    HeightRequest="250"
+                    Source="man.png"
+                    Rotation="5"
+                    >
+                    <Image.Shadow>
+                        <Shadow Brush="{StaticResource Primary}" 
+                            Offset="50, 100"
+                            Radius="70"
+                            Opacity="0.9"/>
                     </Image.Shadow>
                 </Image>
             </AbsoluteLayout>
